@@ -1,4 +1,4 @@
-# < ReadmeGenerator >
+# <ReadmeGenerator>
 
 
   ## Table of Contents 
@@ -30,6 +30,6 @@
   ## License 
       None
   
-  ![Screenshot of project](/assets/screenshot.png)
+  ![Screenshot of project](./assets/Screenshot.png)
 
   

@@ -10,7 +10,7 @@ function imagePooter(answers) {
   else {
     return `
   
-  ![Screenshot of project](/assets/${answers.screenShot})
+  ![Screenshot of project](./assets/${answers.screenShot})
 
   `
   }
@@ -39,7 +39,7 @@ function licenseMaker(answers) {
 
 
 function generateReadme(answers) {
-  return `# < ${answers.title1} >
+  return `#${answers.title1}
 
 
   ## Table of Contents 
