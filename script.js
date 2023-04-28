@@ -39,7 +39,7 @@ function licenseMaker(answers) {
 
 
 function generateReadme(answers) {
-  return `#${answers.title1}
+  return `# ${answers.title1}
 
 
   ## Table of Contents 
