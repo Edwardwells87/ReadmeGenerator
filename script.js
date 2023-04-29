@@ -8,9 +8,8 @@ function imagePooter(answers) {
     `
   }
   else {
-    return `
-  
-  ![Screenshot of project](./assets/${answers.screenShot})
+    return `  
+    ![Screenshot of project](./assets/${answers.screenShot})
 
   `
   }
@@ -136,6 +135,7 @@ function generateReadme(answers) {
 ## Credits
 
 - ${answers.Credits}
+
 `
 }
 

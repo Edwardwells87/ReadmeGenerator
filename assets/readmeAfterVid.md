@@ -36,10 +36,9 @@
 
 ## Credits
 
-- Velit aliquet sagittis id consectetur purus ut faucibus pulvinar.
+- Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. 
 
-  
-  ![Screenshot of project](./assets/Screenshot.jpg)
+![Screenshot of project](./Screenshot.png)
  
 ## License
 
