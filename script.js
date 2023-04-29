@@ -39,18 +39,19 @@ function licenseMaker(answers) {
   }
 
 }
-function licenseStatements(answers){
+function licenseStatements(answers) {
   if (answers.License == 'GPL 3.0') {
     return `## License
    - This project is licensed under the terms of the GPL 3.0 license.
    
-   ##Contact
+## Contact
      
    - My github link is: https://github.com/${answers.contact2}
    - Feel free to contact me at ${answers.contact} if you have more questions regarding the use of this app.`;
   } else if (answers.License == "MIT") {
-    
-    return `## License
+
+    return `
+## License
    - Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -75,20 +76,22 @@ THE SOFTWARE.
     - Feel free to contact me at ${answers.contact} if you have more questions regarding the use of this app.`;
   }
   else if (answers.License == "APACHE 2.0") {
-   
-    return `## License
+
+    return `
+  ## License
     - Apache License Version 2.0, January 2004 http://www.apache.org/licenses/
    
    
-    ##Contact
+## Contact
      
     - My github link is: https://github.com/${answers.contact2}
     - Feel free to contact me at ${answers.contact} if you have more questions regarding the use of this app.`;
   } else {
-    return ` ## License 
+    return `
+## License 
      - None
 
-     ##Contact
+## Contact
      
      - My github link is: https://github.com/${answers.contact2}
      - Feel free to contact me at ${answers.contact} if you have more questions regarding the use of this app.`
@@ -114,7 +117,7 @@ function generateReadme(answers) {
 
 ## Description 
 
--${answers.description1} ${answers.description2} ${answers.description3}
+- ${answers.description1} ${answers.description2} ${answers.description3}
 
 
 
@@ -222,7 +225,7 @@ inquirer
     const imagePooterInner = imagePooter(answers);
     const readmecontent = generateReadme(answers);
     const licenseMakerStuff = licenseStatements(answers);
-    fs.writeFile('Readme.md', licenseBadge + readmecontent + imagePooterInner + licenseMakerStuff, (err) =>
+    fs.writeFile('readmeAfterVid.md', licenseBadge + readmecontent + imagePooterInner + licenseMakerStuff, (err) =>
       err ? console.log(err) : console.log('Successfully created that readme!! ')
     );
   });
